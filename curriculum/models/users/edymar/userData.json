@@ -1,0 +1,183 @@
+{
+  "applicant":{
+    "name": "Edymar Gonzalez Albarracin",
+    "bio": "As a goal-oriented electronic engineer with a keen interest in the development and investigation of software and firmware for the energy sector, I have accumulated over 9 years of experience in implementing and integrating SCADA systems and RTUs, utilizing various protocols and brands in telecontrol projects for the electrical sector. Additionally, I am proficient in configuring LAN devices, maintaining databases, providing technical support, and conducting testing on IHM software, gateways, and RTUs. I am excited to leverage my expertise and skills to contribute to cutting-edge projects in the field of energy."
+   },
+  "contactInfo": [
+    { "type":"phone"   ,  "name":"(+34) 604 26 63 11"       , "link": "(+34) 604 26 63 11"                               },
+    { "type":"mail"    ,  "name":"edymar1990@gmail.com"     , "link": "edymar1990@gmail.com"                          },
+    { "type":"linkedin",  "name":"linkedin"                 , "link": "https://www.linkedin.com/in/edymar-gonz%C3%A1lez-albarracin-08328733"}
+  ],
+  "education": [
+    {
+      "entity": "National Experimental University of Tachira",
+      "degree": "Master in Electronic Engineering",
+      "date": "2013-2017"
+    },
+    {
+      "entity": "National Experimental University of Tachira",
+      "degree": "Electronic Engineering",
+      "date":   "2016-2012"
+    }
+  ],
+  "certifications": [
+    {
+      "entity": "",
+      "name": "Quality, Environment, Occupational Health and Safety Management System",
+      "date": "",
+      "link": ""
+    },
+    {
+      "entity": "",
+      "name": "CCNA Exploratión: Accessing the WAN",
+      "date": "",
+      "link": ""
+    },
+    {
+      "entity": "",
+      "name": "CCNA Exploratión: LAN Switching and Wireless",
+      "date": "",
+      "link": ""
+    },
+    {
+      "entity": "",
+      "name": "CCNA Exploratión: Network Fundamentals",
+      "date": "",
+      "link": ""
+    },
+    {
+      "entity": "",
+      "name": "CCNA Exploratión: Routing protocols and concepts",
+      "date": "",
+      "link": ""
+    },   {
+      "entity": "",
+      "name": "20462 Administering Microsoft SQL Server Databases",
+      "date": "",
+      "link": ""
+    },   {
+      "entity": "",
+      "name": "Autocad 2D and 3D for engineers.",
+      "date": "",
+      "link": ""
+    },   {
+      "entity": "",
+      "name": "PIC microcontrollers in C language.",
+      "date": "",
+      "link": ""
+    }
+  ],
+  "experience": [
+    {
+      "entity": "IGrid T&D",
+      "place": "Barcelona, Spain",
+      "period": "",
+      "data": [
+        {
+          "positions": "Technical Support Engineer",
+          "responsibilities": [
+            "Provided worldwide customer support for configuring iGrid products, including RTUs and SCADA systems",
+            "Configured and tested telecontrol projects for major utility companies such as ENDESA, Estabanell, and UTE",
+            "Aprobar merge request.",
+            "Resolved interoperability issues between products by utilizing industry-standard protocols such as DNP, IEC 60870-5-104, IEC 60870-5-101, IEC 60870-5-103-FT, 61850, DLMS, Procome, MODBUS, SNMP, and OPC UA",
+            "Conducted extensive testing of iGrid products to ensure their functionality and performance."
+           ],
+          "startDate": "06-2020",
+          "endDate": "CURRENT"
+        }
+      ]
+    },
+    {
+      "entity": "Axon Group",
+      "place": "Bogota, Colombia",
+      "period": " ",
+      "data": [
+        {
+          "positions": "Tester Leader",
+          "responsibilities": [
+            "Design and improvements on the TDS process as established by the ISO9001 standard.",
+            "Detailed knowledge of communication protocols: DNP, IEC 60870-5-104, IEC 60870-5-101, MODBUS, ICCP, 61850, OPC UA.",
+            "Improvements in testing protocols for Axon Group products",
+            "Crear documentación técnica.",
+            "Development and improvement about the test protocols of ICCP, IEC 60870-5-104 Endesa profile",
+            "Customer support on Axon products to clients from different parts of Latin America.",
+            "Support in the engineer project department.",
+            "Advanced Training on MODBUS protocol, IEC 60870-5-104, IEC 60870-5-101."
+          ],
+          "startDate": "11-2018",
+          "endDate": "06-2020"
+        },
+        {
+          "positions": "Project Engineer",
+          "responsibilities": [
+            "Configured, conducted Factory Acceptance Tests (FAT), Site Acceptance Tests (SAT), provided documentation, and training for various automation projects in distribution and transmission substations for electrical companies of Colombia such as EBSA, CENS, EPM, ESSA. These projects utilized the following protocols: DNP, IEC 60870-5-104, IEC 60870-5-101, MODBUS, and IEC61850. The projects also involved working with various IEDs, including SIPROTEC, ABB, GE, SEL PLC, ION Meters, and TAPCON 230. We utilized the following gateways: Axon Exchange, AK3, TM1703, RTU ABB, multiprog, and SMP, and SCADA systems such as Axon Builder, SICAM230, and Visual T&D"
+          ],
+          "startDate": "12-2017",
+          "endDate": "11-2018"
+        }
+      ]
+    },
+    {
+      "entity": "Lafontir",
+      "place": "Venezuela",
+      "period": " ",
+      "data": [
+        {
+          "positions": "Telecontrol Specialist",
+          "responsibilities": [
+            " Installed, configured, and tested MIRAGE SCADA systems in operation and distribution centers (CODs) across multiple states in Venezuela, at the National Electric Corporation (CORPOELEC). I ensured communication between different control centers via the ICCP protocol, configured firewalls, switches, and routers associated with the project, and integrated the SCADA system with various telecontrol equipment (RTUs). Additionally, I administered the SQL database used by the SCADA system and developed a database query tool. I provided technical support and capacitation for the system"
+          ],
+          "startDate": "03-2015",
+          "endDate": "12-2017"
+        },
+        {
+          "positions": "Project Engineer",
+          "responsibilities": [  
+             "Installed, configured, and commissioned Remote Telecontrol Units (RTUs) and Human-Machine Interfaces (HMIs)   in electrical substations across multiple states in Venezuela. I integrated the RTUs with equipment from various   manufacturers, including ABB, Siemens, Schneider Electric, COOPER, and LG, using communication protocols   such as DNP3.0, IEC104, IEC101, MODBUS, and 61850 standards. I also ensured that the intervened   substations communicated effectively with their respective cargo dispatch."
+          ],
+          "startDate": "11-2013",
+          "endDate": "03-2015"
+        }
+      ]
+    }
+  ],
+  "hardSkills":[
+    {"name":"HTML5",     "level":"" },
+    {"name":"Bootstrap",  "level":"" },
+    {"name":"MySql",      "level":"" },
+    {"name":"PostgreSQL", "level":"" },
+    {"name":"C",          "level":"" },
+    {"name":"C++",         "level":"" },
+    {"name":"Qt",         "level":"" },
+    {"name":"PHP",         "level":"" },
+    {"name":"IEC-60870-5-101", "level":"" },
+    {"name":"IEC-60870-5-103", "level":"" },
+    {"name":"IEC-60870-5-104", "level":"" },
+    {"name":"SNMP",            "level":"" },
+    {"name":"61850-ICCP",      "level":"" },
+    {"name":"OPC",             "level":"" },
+    {"name":"DLMS",            "level":"" },
+    {"name":"DNP",             "level":"" },
+    {"name":"MODBUS",          "level":"" },
+    {"name":"MATRIKON",        "level":"" },
+    {"name":"TRIANGLE",        "level":"" },
+    {"name":"CONTROLES",       "level":"" },
+    {"name":"AXON GROUP",      "level":"" },
+    {"name":"COOPER",          "level":"" },
+    {"name":"GE",              "level":"" },
+    {"name":"IGRID",          "level":"" },
+    {"name":"SIEMENS",         "level":"" },
+    {"name":"ABB",             "level":"" },
+    {"name":"IEDSCOUT",        "level":"" }
+
+  ],
+  
+  "softSkills":[
+    {"name":"Good communication skills gained through my experience in customer support, including active listening, and the ability to adapt communication style to different audiences" },
+    {"name":"Negotiation and conflict resolution skills, including the ability to identify and address issues, find mutually beneficial solutions, and maintain positive relationships" },
+    {"name":"Teamwork skills, including collaboration, communication, and a willingness to share knowledge and resources" },
+    {"name":"High level of commitment and responsibility to accomplish tasks and meet established deadlines" },
+    {"name":"Organization and monitoring skills, including project management, task prioritization, and tracking progress towards goals" },
+    {"name":"Self-taught skills in the use and configuration of new applications, including a willingness to learn and adapt to new technologies"}
+  ] 
+}

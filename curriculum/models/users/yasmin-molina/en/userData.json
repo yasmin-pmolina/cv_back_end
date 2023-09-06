@@ -1,0 +1,178 @@
+{
+  "applicant":{
+   "name": "Yasmin Molina",
+   "bio": "Developer with an interest in creating software and firmware to provide tailored technological solutions to clients, with the ability to quickly integrate into teams"
+  },
+  "contactInfo": [
+    { "type":"phone"   ,  "name":"(+54) 9-11-24082020"      , "link": "(+54) 9-11-24082020"                               },
+    { "type":"mail"    ,  "name":"yasmin.pmolina@gmail.com" , "link": "yasmin.pmolina@gmail.com"                          },
+    { "type":"linkedin",  "name":"linkedin"                 , "link": "https://www.linkedin.com/in/yasmin-patricia-molina"},
+    { "type":"github"  ,  "name":"Yasmin-Pmolina"           , "link": "https://github.com/yasmin-pmolina"                 }
+  ],
+  "education": [
+    {
+      "entity": "National Experimental University of Tachira",
+      "degree": "Electronic Engineering",
+      "date": "2006-2013"
+    }
+  ],
+  "certifications": [
+    {
+      "entity":"edX",
+      "name": "Back-end Application Development with Node.js and Express",
+      "date": "Setp 2023",
+      "link": "https://courses.edx.org/certificates/6847e2b9b6654cb38cd287a5547c7d3f"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "Git Certificate of Completion",
+      "date": "Feb 2023",
+      "link": "https://community.open-bootcamp.com/user/yasminpmolina/certificaciones/58d2c085-118f-4476-95aa-567aa2a0d25b"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "Sql Certificate of Completion",
+      "date": "Feb 2023",
+      "link": "https://community.open-bootcamp.com/user/yasminpmolina/certificaciones/2ba94b07-e837-4143-bc6b-1580ebd80f6d"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "javascript Certificate of Completion",
+      "date": "Dic 2022",
+      "link": "https://community.open-bootcamp.com/user/yasminpmolina/certificaciones/b372bfdf-299f-4364-a7dc-cf20b8ccfd81"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "HTML and CSS Certificate of Completion",
+      "date": "Dic 2022",
+      "link": "https://storage.googleapis.com/openvitae-prod/diplomas%2F8b4e8c07-95fa-4b61-aa32-1897b82bfbc7.pdf"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Intermediate"
+    }
+  ],
+  "experience": [
+    {
+      "entity": "FK TECH SRL",
+      "place": "Buenos Aires, Argentina",
+      "period": 36,
+      "data": [
+        {
+          "positions": "Technical leader",
+          "responsibilities": [
+            "Requirements analysis.",
+            "Manage task assignment",
+            "Approve merge requests.",
+            "Create technical documentation.",
+            "Provide technical and business logic guidance to the team.",
+            "Level 3 support."
+          ],
+          "startDate": "08-2020",
+          "endDate": "05-2022"
+        },
+        {
+          "positions": "Programmer Analyst",
+          "responsibilities": [
+            "Requirement analysis.",
+            "Development of new functionalities.",
+            "Code maintenance and debugging.",
+            "Create technical documentation.",
+            "Provide workarounds in production.",
+            "Level 3 support."
+          ],
+          "startDate": "06-2019",
+          "endDate": "08-2020"
+        }
+      ]
+    },
+    {
+      "entity": "Freelance",
+      "place": "Buenos Aires, Argentina",
+      "period": 36,
+      "data": [
+        {
+          "positions": "Developer",
+          "responsibilities": [
+            "Verify compliance with specifications.",
+            "Testing and quality control.",
+            "Application development (C# programming).",
+            "Create technical documentation."
+          ],
+          "startDate": "03-2019",
+          "endDate": "05-2019"
+        }
+      ]
+    },
+    {
+      "entity": "The Factory FKA",
+      "place": "Caracas, Venezuela",
+      "period": 39,
+      "data": [
+        {
+          "positions": "Project Engineer",
+          "responsibilities": [
+            "Information gathering (legal requirements).",
+            "Development of equipment testing protocols (firmware and software).",
+            "Code maintenance and correction (firmware).",
+            "Desktop application development (software).",
+            "Product quality testing.",
+            "Internal support.",
+            "Create technical documentation."
+          ],
+          "startDate": "03-2015",
+          "endDate": "05-2018"
+        }
+      ]
+    },
+    {
+      "entity": "Freelance",
+      "place": "Caracas, Venezuela",
+      "period": 8,
+      "data": [
+        {
+          "positions": "Project Engineer",
+          "responsibilities": [
+            "Information gathering for point of sale software creation.",
+            "Development in the Qt Creator integrated development environment.",
+            "Design of MySql database.",
+            "Testing and debugging of product functionality."
+          ],
+          "startDate": "05-2018",
+          "endDate": "12-2018"
+        }
+      ]
+    }
+  ],
+  "hardSkills":[
+    {"name":"Git",        "level":""},
+    {"name":"JavaScript", "level":"" },
+    {"name":"HTML5",      "level":"" },
+    {"name":"SASS/SCSS",  "level":"" },
+    {"name":"React.js",   "level":"" },
+    {"name":"Bootstrap",  "level":"" },
+    {"name":"JQuery",     "level":"" },
+    {"name":"MySql",      "level":"" },
+    {"name":"PostgreSQL", "level":"" },
+    {"name":"C",          "level":"" },
+    {"name":"C++",        "level":"" },
+    {"name":"C#",         "level":"" },
+    {"name":"Node.js",    "level":"" },
+    {"name":"Qt",         "level":"" },
+    {"name":"Jira",       "level":"" }
+  ],
+  
+  "softSkills":[
+    {"name":"The ability to analyze information objectively and make reasoned judgments or decisions." },
+    {"name":"The ability to collaborate effectively with others towards a common goal. It includes active listening, communication, cooperation, and the willingness to contribute to the team's success." },
+    {"name":"The capacity to quickly acquire and apply new knowledge, skills, and competencies." },
+    {"name":"The ability to identify, analyze, and develop solutions to complex problems." },
+    {"name":"Taking initiative and demonstrating a proactive mindset in anticipating and addressing issues or opportunities." }
+  ] 
+}

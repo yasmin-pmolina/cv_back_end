@@ -1,0 +1,172 @@
+{
+  "applicant":{
+   "name": "Yasmin Molina",
+   "bio": "Desarrollador con interés en la creación de software y firmware para brindar soluciones tecnológicas ajustadas al cliente, con capacidad de integración a equipos de forma rápida"
+  },
+  "contactInfo": [
+    { "type":"phone"   ,  "name":"(+54) 9-11-24082020"      , "link": "(+54) 9-11-24082020"                               },
+    { "type":"mail"    ,  "name":"yasmin.pmolina@gmail.com" , "link": "yasmin.pmolina@gmail.com"                          },
+    { "type":"linkedin",  "name":"linkedin"                 , "link": "https://www.linkedin.com/in/yasmin-patricia-molina"},
+    { "type":"github"  ,  "name":"Yasmin-Pmolina"           , "link": "https://github.com/yasmin-pmolina"                 }
+  ],
+  "education": [
+    {
+      "entity": "Universidad Nacional Experimental del Táchira",
+      "degree": "Ingeniero Electrónico",
+      "date": "2006-2013"
+    }
+  ],
+  "certifications": [
+    {
+      "entity": "Open Bootcamp",
+      "name": "Certificado de finalización Git",
+      "date": "Feb 2023",
+      "link": "https://community.open-bootcamp.com/user/yasminpmolina/certificaciones/58d2c085-118f-4476-95aa-567aa2a0d25b"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "Certificado de finalización Sql",
+      "date": "Feb 2023",
+      "link": "https://community.open-bootcamp.com/user/yasminpmolina/certificaciones/2ba94b07-e837-4143-bc6b-1580ebd80f6d"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "Certificado de finalización javascript",
+      "date": "Dic 2022",
+      "link": "https://community.open-bootcamp.com/user/yasminpmolina/certificaciones/b372bfdf-299f-4364-a7dc-cf20b8ccfd81"
+    },
+    {
+      "entity": "Open Bootcamp",
+      "name": "Certificado de finalización HTML y CSS",
+      "date": "Dic 2022",
+      "link": "https://storage.googleapis.com/openvitae-prod/diplomas%2F8b4e8c07-95fa-4b61-aa32-1897b82bfbc7.pdf"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Ingles",
+      "level": "Intermedio"
+    }
+  ],
+  "experience": [
+    {
+      "entity": "FK TECH SRL",
+      "place": "Buenos Aires, Argentina",
+      "period": 36,
+      "data": [
+        {
+          "positions": "Líder Técnico",
+          "responsibilities": [
+            "Análisis de requerimientos",
+            "Gestionar asignación de actividades.",
+            "Aprobar merge request.",
+            "Crear documentación técnica.",
+            "Asesorar al equipo a nivel técnico y lógica de negocio.",
+            "Soporte Nivel 3."
+          ],
+          "startDate": "08-2020",
+          "endDate": "05-2022"
+        },
+        {
+          "positions": "Analista Programador",
+          "responsibilities": [
+            "Análisis de requerimientos.",
+            "Desarrollo de nuevas funcionalidades.",
+            "Mantenimiento y depuración de código.",
+            "Crear documentación técnica.",
+            "Proporcionar Workarounds en producción.",
+            "Soporte Nivel 3."
+          ],
+          "startDate": "06-2019",
+          "endDate": "08-2020"
+        }
+      ]
+    },
+    {
+      "entity": "Freelance",
+      "place": "Buenos Aires, Argentina",
+      "period": 36,
+      "data": [
+        {
+          "positions": "Desarrollador",
+          "responsibilities": [
+            "Verificar comportamiento con respecto a las especificaciones.",
+            "Pruebas y control de calidad.",
+            "Desarrollo de la aplicación (Programación en C#).",
+            "Crear documentación técnica."
+          ],
+          "startDate": "03-2019",
+          "endDate": "05-2019"
+        }
+      ]
+    },
+    {
+      "entity": "The Factory FKA",
+      "place": "Caracas, Venezuela",
+      "period": 39,
+      "data": [
+        {
+          "positions": "Ingeniero de Proyectos",
+          "responsibilities": [
+            "Levantamiento de información (requerimientos de ley).",
+            "Desarrollo de protocolo de pruebas de equipos (firmware y software).",
+            "Mantenimiento y corrección de código (firmware).",
+            "Desarrollo de aplicaciones en escritorio (software).",
+            "Pruebas de calidad de los productos.",
+            "Soporte interno.",
+            "Crear documentación técnica."
+          ],
+          "startDate": "03-2015",
+          "endDate": "05-2018"
+        }
+      ]
+    },
+    {
+      "entity": "Freelance",
+      "place": "Caracas, Venezuela",
+      "period": 8,
+      "data": [
+        {
+          "positions": "Ingeniero de Proyectos",
+          "responsibilities": [
+            "Levantamiento de información para creación de software de punto de venta.",
+            "Desarrollo en el entorno de desarrollo integrado Qt Creator.",
+            "Diseño de base de datos MySql.",
+            "Pruebas y depuración del funcionamiento del producto."
+          ],
+          "startDate": "05-2018",
+          "endDate": "12-2018"
+        }
+      ]
+    }
+  ],
+  "hardSkills":[
+    {"name":"Git",        "level":""},
+    {"name":"JavaScript", "level":"" },
+    {"name":"HTML5",      "level":"" },
+    {"name":"SASS/SCSS",  "level":"" },
+    {"name":"React.js",   "level":"" },
+    {"name":"Bootstrap",  "level":"" },
+    {"name":"JQuery",     "level":"" },
+    {"name":"MySql",      "level":"" },
+    {"name":"PostgreSQL", "level":"" },
+    {"name":"C",          "level":"" },
+    {"name":"C++",        "level":"" },
+    {"name":"C#",         "level":"" },
+    {"name":"Node.js",    "level":"" },
+    {"name":"Qt",         "level":"" },
+    {"name":"Jira",       "level":"" }
+  ],
+  
+  "softSkills":[
+    { "name": "Capacidad para analizar la información de forma objetiva y emitir juicios o tomar decisiones razonadas." },
+    { "name": "Capacidad para colaborar eficazmente con los demás en pro de un objetivo común. Incluye la escucha activa, la comunicación, la cooperación y la voluntad de contribuir al éxito del equipo." },
+    { "name": "Capacidad de adquirir y aplicar rápidamente nuevos conocimientos, habilidades y competencias." },
+    { "name": "Capacidad de identificar, analizar y desarrollar soluciones a problemas complejos." },
+    { "name": "Tomar la iniciativa y demostrar una mentalidad proactiva al anticipar y abordar problemas u oportunidades." }
+  ] 
+}

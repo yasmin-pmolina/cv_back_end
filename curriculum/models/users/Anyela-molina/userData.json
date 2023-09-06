@@ -1,0 +1,125 @@
+{
+  "applicant":{
+   "name": "Anyela Molina",
+   "bio": "Desarrollador con interés en la creación de software y firmware para brindar soluciones tecnológicas ajustadas al cliente, con capacidad de integración a equipos de forma rápida"
+  },
+  "contactInfo": [
+    { "type":"phone"   ,  "name":"(+57) 3508185915"      , "link": "(+57) 3508185915"                               },
+    { "type":"mail"    ,  "name":"anyyela@gmail.com" , "link": "anyyela@gmail.com"                          },
+    { "type":"linkedin",  "name":"linkedin"                 , "link": "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH9fSQwI-iTPQAAAYaB3xBIvhW-SRJnlMTDbn1mXObRP3GkyNMREit5iCGhO1HH6RZ1zy1RAzSzQjLcS4zIIqPNwCGUvEehzNWZ9wmAMl7ZUQOTicZg4U5c5zFVfT22dtQBYqg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fanyelamolinaelectronico%2F"},
+    { "type":"github"  ,  "name":"Anyela-Molina"           , "link": "https://github.com/AnyelaMolina"                 }
+  ],
+  "education": [
+    {
+      "entity": "Universidad Nacional Experimental del Táchira",
+      "degree": "Ingeniero Electrónico",
+      "date": "2006-2013"
+    }
+  ],
+  "certifications": [
+    {
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Ingles",
+      "level": "Intermedio Bajo"
+    }
+  ],
+  "experience": [
+    {
+      "entity": "Axon Group",
+      "place": "Bogota, Colombia",
+      "period": " ",
+      "data": [
+        {
+          "positions": "Software development",
+          "responsibilities": [
+            "Análisis de requerimientos.",
+            "GCrear documentación técnica.",
+            "Soporte Nivel 3."
+          ],
+          "startDate": "10-2018",
+          "endDate": "PRESENTE"
+        }
+      ]
+    },
+    {
+      "entity": "The Factory HKA",
+      "place": "Caracas, Venezuela",
+      "period": 36,
+      "data": [
+        {
+          "positions": "Ingeniero de Proyectos",
+          "responsibilities": [
+            "Levantamiento de información (requerimientos de ley).",
+            "Desarrollo de Protocolo de Pruebas de equipos (firmware y software)"
+          ],
+          "startDate": "01-2017",
+          "endDate": "05-2018"
+        },
+        {
+          "positions": "Desarrollador",
+          "responsibilities": [
+            "Hacer el análisis y modificaciones necesarias para obtener una mejor eficiencia.",
+            "Prestar apoyo técnico a los usuarios que lo requieran."
+          ],
+          "startDate": "02-2016",
+          "endDate": "01-2017"
+        }
+      ]
+    },
+    {
+      "entity": "Jeantex S.A",
+      "place": "Maracay, Venezuela",
+      "period": "",
+      "data": [
+        {
+          "positions": "Ingeniero Especialista en Mtto. Autómatas y robótica",
+          "responsibilities": [
+            "Participación en mantenimiento Correctivo y preventivo de las maquinas general en la Open End. Gestión de producción y calidad"
+          ],
+          "startDate": "08-2015",
+          "endDate": "01-2016"
+        }
+      ]
+    },
+    {
+      "entity": "Jeantex S.A",
+      "place": "Maracay, Venezuela",
+      "period": "",
+      "data": [
+        {
+          "positions": "Ingeniero Entrenante",
+          "responsibilities": [
+            "Rediseño y mantenimiento del sistema de seguridad (Alarmas, cámaras)."
+          ],
+          "startDate": "02-2014",
+          "endDate": "08-2015"
+        }
+      ]
+    }
+  ],
+  "hardSkills":[
+    {"name":"Git",        "level":""},
+    {"name":"MySql",      "level":"" },
+    {"name":"PostgreSQL", "level":"" },
+    {"name":"C",          "level":"" },
+    {"name":"C++",        "level":"" },
+    {"name":"C#",         "level":"" },
+    {"name":"Qt",         "level":"" },
+    {"name":"Jira",       "level":"" }
+  ],
+  
+  "softSkills":[
+    {"name":"Pensamiento crítico" },
+    {"name":"Trabajo en equipo" },
+    {"name":"Capacidad de aprendizaje" },
+    {"name":"Capacidad de resolución de problemas" },
+    {"name":"Proactiva" }
+  ] 
+}
