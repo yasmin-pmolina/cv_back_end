@@ -30,9 +30,7 @@ if(req.session.authorization) {
  }
 });
  
-const PORT =5000;
-
 app.use("/applicant", customer_routes);
 app.use("/", genl_routes);
 
-app.listen(PORT,()=>console.log("Server is running"));
+app.listen(config.port,()=>console.log("Server is running"));
