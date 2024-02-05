@@ -10,6 +10,7 @@ const uploadFilePdf = require('../util').uploadFilePdf;
 const sendFilePdf = require('../util').sendFilePdf;
 const path = require('path');
 const fs = require('fs');
+const multer = require('multer'); 
 
 // endpoint '/' 
 public_users.get('/contact', async function (req, res) {
@@ -97,5 +98,27 @@ public_users.get('/', function (req, res) {
     });
 });
 */
+
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads')
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now())
+  }
+})
+var upload = multer({ storage: storage })
+
+public_users.post('/upload', upload.array('file', 12), (req, res, next) => {
+  const files = req.files
+  if (!files) {
+    const error = new Error('Please choose files')
+    error.httpStatusCode = 400
+    return next(error)
+  }
+    res.send(files)
+})
+
+
 
 module.exports.general = public_users;

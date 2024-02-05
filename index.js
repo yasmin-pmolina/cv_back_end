@@ -33,4 +33,10 @@ if(req.session.authorization) {
 app.use("/applicant", customer_routes);
 app.use("/", genl_routes);
 
+
+
+
+
+
+
 app.listen(config.port,()=>console.log("Server is running"));
