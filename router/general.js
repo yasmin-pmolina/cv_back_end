@@ -10,6 +10,7 @@ const sendFilePdf = require('../util').sendFilePdf;
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer'); 
+const jdata = require('../models/users/yasmin-molina/en/userData.json');
 
 let users = require('../util').users;
 
@@ -53,7 +54,7 @@ public_users.get('/contact', async function (req, res) {
     return res.status(404).json({message: `applicant information (${rutaAbsoluta}) not found`});
 } catch (error) {
 
-  return res.status(404).json({message: error.message });
+  return res.status(404).json({message: error.message, Data: jdata });
 }
    
 });  
