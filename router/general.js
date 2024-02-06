@@ -10,7 +10,6 @@ const sendFilePdf = require('../util').sendFilePdf;
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer'); 
-const jdata = require('../models/users/yasmin-molina/en/userData.json');
 
 let users = require('../util').users;
 
@@ -35,26 +34,27 @@ const isValid = (username)=>{ //returns boolean
 // endpoint '/' 
 public_users.get('/contact', async function (req, res) {
 
+  let rutaAbsoluta = '';
+  const { language, applicant } = req.query;
+  
   try {
 
-    const { language, applicant } = req.query;
     if (!language || !applicant) {
       return res.status(400).json({ error: 'missing information required for consultation'});
     }
     
-    let rutaRelativa = `models\\users\\${applicant}\\${language}\\userData.json`;//`..\\models\\users\\${applicant}\\${language}\\userData.json`;
-    const rutaAbsoluta = path.resolve(rutaRelativa);// path.resolve(__dirname, rutaRelativa);
-    url = rutaAbsoluta.replace(/\\/g, "/"); 
-    const bookDetails = await readJsonFile(url);
+    let rutaRelativa = `..\\models\\users\\${applicant}\\${language}\\userData.json`;
+    rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
+    const details = await readJsonFile(rutaAbsoluta.replace(/\\/g, "/"));
 
-    if(bookDetails){
-      return res.status(200).json(bookDetails);
+    if(details){
+      return res.status(200).json(details);
     }
   
     return res.status(404).json({message: `applicant information (${rutaAbsoluta}) not found`});
 } catch (error) {
 
-  return res.status(404).json({message: error.message, url:url, Data: jdata });
+  return res.status(404).json({message: error.message, url: rutaAbsoluta});
 }
    
 });  
@@ -75,7 +75,7 @@ public_users.post('/contact/:certificates', (req, res) => {
   const rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
 
   // Llama a cargarArchivosPDF con la ruta personalizada para esta solicitud
-  const middlewareMulter = uploadFilePdf(rutaAbsoluta);
+  const middlewareMulter = uploadFilePdf(rutaAbsoluta.replace(/\\/g, "/"));
 
   // Ejecuta el middleware Multer para esta solicitud
   middlewareMulter(req, res, async (error) => {
@@ -87,21 +87,28 @@ public_users.post('/contact/:certificates', (req, res) => {
   
 
 // Ruta para enviar un archivo PDF por su nombre
-public_users.get('/download/:certificates', (req, res) => {
+public_users.get('/download/:certificate', (req, res) => {
+
+  certificate = req.params.certificate;
+  const { applicant } = req.query;
+  let rutaAbsoluta = '';
+
+  try {
   // Obtén el nombre del archivo PDF desde la consulta (query parameter)
-  certificates = req.params.certificates;
-
-  const { language, applicant } = req.query;
-
-  if (!language || !applicant) {      
+  if (!applicant) {      
     return res.status(400).json({ error: 'missing information required for consultation'});
   }
     
-  let rutaRelativa = `..\\models\\users\\${applicant}\\${language}\\certificates\\${certificates}.pdf`;
-  const rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
+  let rutaRelativa = `../models/users/${applicant}/certificates/${certificate}.pdf`;
+  rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
 
-  sendFilePdf(res,rutaAbsoluta,certificates)
+  sendFilePdf(res, rutaAbsoluta, certificate)
   // Lee el archivo PDF y envíalo como respuesta
+
+} catch (error) {
+
+  return res.status(404).json({message: error.message, url: rutaAbsoluta});
+}
 
 });
 

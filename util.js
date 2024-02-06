@@ -1,16 +1,17 @@
 const config = require('./config.js'); 
-const fs = require('fs').promises; 
+const fs = require('fs')
 const path = require('path');
 const multer = require('multer'); 
 
-async function readJsonFile(file) {
-  try {
-      const data = await fs.readFile(file, { encoding: 'utf8' });
-      // Parsea el contenido JSON en un objeto JavaScript
-      const userData = JSON.parse(data);
-      return userData; // Devuelve los datos si es necesario
+function readJsonFile(file) {
+
+  try {  
+    const data = fs.readFileSync(file, {encoding:'utf8', flag:'r'});
+    // Parsea el contenido JSON en un objeto JavaScript
+    const userData = JSON.parse(data);
+    return userData; // Devuelve los datos si es necesario
   } catch (error) {
-      throw error;
+    throw error; 
   }
 }
 
@@ -42,7 +43,7 @@ function uploadFilePdf(filePdf) {
 }
 
 function sendFilePdf(res, rutaAbsoluta, nombreArchivo) {
-  fs.readFile(rutaAbsoluta, (error, data) => {
+   fs.readFile(rutaAbsoluta, (error, data) => {
     if (error) {
       return res.status(404).json({ error: 'Archivo PDF no encontrado' });
     }
