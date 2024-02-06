@@ -1,18 +1,17 @@
 const config = require('./config.js'); 
-const fs = require('fs');
+const fs = require('fs').promises; 
 const path = require('path');
 const multer = require('multer'); 
 
 async function readJsonFile(file) {
-   
-    try {  
-      const data = await fs.readFileSync(file, {encoding:'utf8', flag:'r'});
+  try {
+      const data = await fs.readFile(file, { encoding: 'utf8' });
       // Parsea el contenido JSON en un objeto JavaScript
       const userData = JSON.parse(data);
       return userData; // Devuelve los datos si es necesario
-    } catch (error) {
-      throw error; 
-    }
+  } catch (error) {
+      throw error;
+  }
 }
 
 // Configura multer para manejar la carga de archivos PDF
