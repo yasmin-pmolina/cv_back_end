@@ -44,8 +44,8 @@ public_users.get('/contact', async function (req, res) {
     
     let rutaRelativa = `models\\users\\${applicant}\\${language}\\userData.json`;//`..\\models\\users\\${applicant}\\${language}\\userData.json`;
     const rutaAbsoluta = path.resolve(rutaRelativa);// path.resolve(__dirname, rutaRelativa);
-
-    const bookDetails = await readJsonFile(rutaRelativa);
+    url = rutaAbsoluta.replace(/\\/g, "/"); 
+    const bookDetails = await readJsonFile(url);
 
     if(bookDetails){
       return res.status(200).json(bookDetails);
@@ -54,7 +54,7 @@ public_users.get('/contact', async function (req, res) {
     return res.status(404).json({message: `applicant information (${rutaAbsoluta}) not found`});
 } catch (error) {
 
-  return res.status(404).json({message: error.message, Data: jdata });
+  return res.status(404).json({message: error.message, url:url, Data: jdata });
 }
    
 });  
