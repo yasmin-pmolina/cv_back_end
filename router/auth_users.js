@@ -90,8 +90,8 @@ regd_users.delete("/auth/review/:isbn", async (req, res) => {
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const user = req.session.authorization.username; // Obtener el ID de sesión del usuario
-    const uploadPath = path.join(__dirname,'..', 'models', 'users', user, 'certificates'); // Carpeta de destino basada en el ID de sesión
+    const user = req.session.authorization.username; 
+    const uploadPath = path.join(__dirname,'..', 'models', 'users', user, 'certificates'); 
     cb(null, uploadPath);
   },
   filename: (req, file, cb) => {

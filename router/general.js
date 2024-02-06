@@ -59,33 +59,6 @@ public_users.get('/contact', async function (req, res) {
    
 });  
 
-/*
-// Ruta para recibir el archivo PDF y determinar su tipo
-public_users.post('/contact/:certificate', (req, res) => {
-
-  certificate = req.params.certificate;
-
-  const { language, applicant } = req.query;
-
-  if (!language || !applicant) {      
-    return res.status(400).json({ error: 'missing information required for consultation'});
-  }
-    
-  let rutaRelativa = `..\\models\\users\\${applicant}\\${language}\\certificates\\${certificate}`;
-  const rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
-
-  // Llama a cargarArchivosPDF con la ruta personalizada para esta solicitud
-  const middlewareMulter = uploadFilePdf(rutaAbsoluta.replace(/\\/g, "/"));
-
-  // Ejecuta el middleware Multer para esta solicitud
-  middlewareMulter(req, res, async (error) => {
-    if (error) {
-      return res.status(400).json({ error: 'Error al cargar el archivo PDF' });
-    }
-  });
-});
-  */
-
 // Ruta para enviar un archivo PDF por su nombre
 public_users.get('/download/:certificate', (req, res) => {
 
@@ -112,49 +85,6 @@ public_users.get('/download/:certificate', (req, res) => {
 
 });
 
-/*
-public_users.get('/', function (req, res) {
-
-  const url =  `${config.apiUrl}:${config.port}/books/`;
-  axios.get(url)  
-    .then((response) => {
-      res.status(200).json({ books: response.data });
-    })
-    .catch((error) => {
-      res.status(500).json(`Error interno del servidor ${error.message} `);
-    });
-});
-*/
-
-
-/*
-var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads')
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + Date.now())
-  }
-})
-var upload = multer({ storage: storage })
-
-public_users.post('/upload', upload.array('file', 12), (req, res, next) => {
-  const files = req.files
-  try {
-
-  if (!files) {
-    const error = new Error('Please choose files')
-    error.httpStatusCode = 400
-    return next(error)
-  }
-    res.send(files)
-
-  } catch (error) {
-
-    return res.status(404).json({message: error.message});
-  }
-})
-*/
 
 public_users.post("/register", (req,res) => {
 
