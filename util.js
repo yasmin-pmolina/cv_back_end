@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer'); 
 
-function readJsonFile(file) {
+async function readJsonFile(file) {
    
     try {  
-      const data = fs.readFileSync(file, {encoding:'utf8', flag:'r'});
+      const data = await fs.readFileSync(file, {encoding:'utf8', flag:'r'});
       // Parsea el contenido JSON en un objeto JavaScript
       const userData = JSON.parse(data);
       return userData; // Devuelve los datos si es necesario
