@@ -4,6 +4,15 @@ const config = require('../config.js');
 const regd_users = express.Router();
 let users = require('../util').users;
 
+
+const path = require('path');
+const fs = require('fs');
+const multer = require('multer'); 
+
+
+
+
+
 users.push(config.superUser);
 
 
@@ -79,6 +88,46 @@ regd_users.delete("/auth/review/:isbn", async (req, res) => {
 });
 */
 
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    const user = req.session.authorization.username; // Obtener el ID de sesión del usuario
+    const uploadPath = path.join(__dirname,'..', 'models', 'users', user, 'certificates'); // Carpeta de destino basada en el ID de sesión
+    cb(null, uploadPath);
+  },
+  filename: (req, file, cb) => {
+    //const extension = path.extname(file.originalname); // Obtener la extensión del archivo original
+    const newFileName = file.originalname; // Nuevo nombre del archivo con ID de sesión y marca de tiempo
+    cb(null, newFileName);
+  }
+});
+
+const fileFilter = (req, file, cb) => {
+  const allowedExtensions = ['.pdf']; // Extensión permitida
+  const fileExtension = path.extname(file.originalname).toLowerCase();
+  if (allowedExtensions.includes(fileExtension)) {
+    cb(null, true); // Aceptar archivo
+  } else {
+    cb(new Error('Only PDF files are allowed'), false); // Rechazar archivo
+  }
+};
+
+const upload = multer({ storage: storage, fileFilter: fileFilter });
+
+regd_users.post('/auth/upload', upload.array('file', 12), (req, res, next) => {
+  const files = req.files;
+
+  try {
+    if (!files) {
+      const error = new Error('Please choose files');
+      error.httpStatusCode = 400;
+      return next(error);
+    }
+
+    res.send(files);
+  } catch (error) {
+    return res.status(404).json({ message: error.message });
+  }
+});
 
 module.exports.authenticated = regd_users;
 module.exports.users = users;

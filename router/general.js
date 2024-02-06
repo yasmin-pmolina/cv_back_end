@@ -59,11 +59,11 @@ public_users.get('/contact', async function (req, res) {
    
 });  
 
-
+/*
 // Ruta para recibir el archivo PDF y determinar su tipo
-public_users.post('/contact/:certificates', (req, res) => {
+public_users.post('/contact/:certificate', (req, res) => {
 
-  certificates = req.params.certificates;
+  certificate = req.params.certificate;
 
   const { language, applicant } = req.query;
 
@@ -71,7 +71,7 @@ public_users.post('/contact/:certificates', (req, res) => {
     return res.status(400).json({ error: 'missing information required for consultation'});
   }
     
-  let rutaRelativa = `..\\models\\users\\${applicant}\\${language}\\certificates\\${certificates}`;
+  let rutaRelativa = `..\\models\\users\\${applicant}\\${language}\\certificates\\${certificate}`;
   const rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
 
   // Llama a cargarArchivosPDF con la ruta personalizada para esta solicitud
@@ -84,7 +84,7 @@ public_users.post('/contact/:certificates', (req, res) => {
     }
   });
 });
-  
+  */
 
 // Ruta para enviar un archivo PDF por su nombre
 public_users.get('/download/:certificate', (req, res) => {
@@ -126,6 +126,8 @@ public_users.get('/', function (req, res) {
 });
 */
 
+
+/*
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'uploads')
@@ -138,13 +140,21 @@ var upload = multer({ storage: storage })
 
 public_users.post('/upload', upload.array('file', 12), (req, res, next) => {
   const files = req.files
+  try {
+
   if (!files) {
     const error = new Error('Please choose files')
     error.httpStatusCode = 400
     return next(error)
   }
     res.send(files)
+
+  } catch (error) {
+
+    return res.status(404).json({message: error.message});
+  }
 })
+*/
 
 public_users.post("/register", (req,res) => {
 
