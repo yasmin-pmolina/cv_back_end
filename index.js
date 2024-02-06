@@ -5,7 +5,6 @@ const customer_routes = require('./router/auth_users.js').authenticated;
 const genl_routes = require('./router/general.js').general;
 const config = require('./config.js'); 
 
-
 const app = express();
 
 app.use(express.json());

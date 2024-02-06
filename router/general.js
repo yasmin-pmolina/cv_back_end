@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require("axios");
-let isValid = require("./auth_users.js").isValid;
-let users = require("./auth_users.js").users;
+//let users = require("./auth_users.js").users;
 const public_users = express.Router();
 const config = require('../config.js'); 
 const readJsonFile = require('../util').readJsonFile;
@@ -11,6 +10,26 @@ const sendFilePdf = require('../util').sendFilePdf;
 const path = require('path');
 const fs = require('fs');
 const multer = require('multer'); 
+
+let users = require('../util').users;
+
+
+const isValid = (username)=>{ //returns boolean
+  //write code to check is the username is valid
+
+
+  }
+  
+  const doesExist = (username)=>{
+    let userswithsamename = users.filter((user)=>{
+      return user.username === username
+    });
+    if(userswithsamename.length > 0){
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 // endpoint '/' 
 public_users.get('/contact', async function (req, res) {
@@ -119,6 +138,20 @@ public_users.post('/upload', upload.array('file', 12), (req, res, next) => {
     res.send(files)
 })
 
+public_users.post("/register", (req,res) => {
+
+  const username = req.body.username;
+  const password = req.body.password;
+  if (username && password) {
+    if (!doesExist(username)) { 
+      users.push({"username":username,"password":password});
+      return res.status(200).json({message: "User successfully registered. Now you can login"});
+    } else {
+      return res.status(404).json({message: "User already exists!"});    
+    }
+  } 
+  return res.status(404).json({message: "Unable to register user."});
+});
 
 
 module.exports.general = public_users;

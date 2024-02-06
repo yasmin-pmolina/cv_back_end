@@ -56,7 +56,10 @@ function sendFilePdf(res, rutaAbsoluta, nombreArchivo) {
   });
 }
 
+let users = [];
+
 module.exports.readJsonFile = readJsonFile;
 module.exports.uploadPdf = uploadPdf;
 module.exports.uploadFilePdf = uploadFilePdf;
 module.exports.sendFilePdf = sendFilePdf;
+module.exports.users = users;
