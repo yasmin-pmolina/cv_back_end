@@ -41,8 +41,8 @@ public_users.get('/contact', async function (req, res) {
       return res.status(400).json({ error: 'missing information required for consultation'});
     }
     
-    let rutaRelativa = `..\\models\\users\\${applicant}\\${language}\\userData.json`;
-    const rutaAbsoluta = path.resolve(__dirname, rutaRelativa);
+    let rutaRelativa = `models\\users\\${applicant}\\${language}\\userData.json`;//`..\\models\\users\\${applicant}\\${language}\\userData.json`;
+    const rutaAbsoluta = path.resolve(rutaRelativa);// path.resolve(__dirname, rutaRelativa);
 
     const bookDetails = await readJsonFile(rutaAbsoluta);
 
