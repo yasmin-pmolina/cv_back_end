@@ -44,7 +44,7 @@ public_users.get('/contact', async function (req, res) {
     let rutaRelativa = `models\\users\\${applicant}\\${language}\\userData.json`;//`..\\models\\users\\${applicant}\\${language}\\userData.json`;
     const rutaAbsoluta = path.resolve(rutaRelativa);// path.resolve(__dirname, rutaRelativa);
 
-    const bookDetails = await readJsonFile(rutaAbsoluta);
+    const bookDetails = await readJsonFile(rutaRelativa);
 
     if(bookDetails){
       return res.status(200).json(bookDetails);
