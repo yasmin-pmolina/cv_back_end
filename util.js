@@ -15,6 +15,19 @@ function readJsonFile(file) {
   }
 }
 
+function writeJsonFile(file, data) {
+  try {
+    // Convierte el objeto JavaScript en una cadena JSON
+    const jsonData = JSON.stringify(data, null, 2);
+    // Escribe la cadena JSON en el archivo especificado
+    fs.writeFileSync(file, jsonData, { encoding: 'utf8', flag: 'w' });
+    console.log(`Los datos han sido escritos en ${file}`);
+  } catch (error) {
+    throw error;
+  }
+}
+
+
 // Configura multer para manejar la carga de archivos PDF
 const uploadPdf = multer({ 
   dest: 'uploads/', // Directorio donde se guardarán los archivos PDF
@@ -62,4 +75,5 @@ module.exports.readJsonFile = readJsonFile;
 module.exports.uploadPdf = uploadPdf;
 module.exports.uploadFilePdf = uploadFilePdf;
 module.exports.sendFilePdf = sendFilePdf;
+module,exports.writeJsonFile = writeJsonFile;
 module.exports.users = users;

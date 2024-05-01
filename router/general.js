@@ -31,7 +31,7 @@ const isValid = (username)=>{ //returns boolean
     }
   }
 
-// endpoint '/' 
+// get info of applicant '/' 
 public_users.get('/contact', async function (req, res) {
 
   let rutaAbsoluta = '';
@@ -59,7 +59,7 @@ public_users.get('/contact', async function (req, res) {
    
 });  
 
-// Ruta para enviar un archivo PDF por su nombre
+// get certificate of applicant
 public_users.get('/download/:certificate', (req, res) => {
 
   certificate = req.params.certificate;
@@ -85,7 +85,8 @@ public_users.get('/download/:certificate', (req, res) => {
 
 });
 
-
+// registrar applicant
+// TODO: agregar validacion de directorio y archivo json 
 public_users.post("/register", (req,res) => {
 
   const username = req.body.username;

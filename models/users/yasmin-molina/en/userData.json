@@ -1,13 +1,29 @@
 {
-  "applicant":{
-   "name": "Yasmin Molina",
-   "bio": "Developer with an interest in creating software and firmware to provide tailored technological solutions to clients, with the ability to quickly integrate into teams"
+  "applicant": {
+    "name": "Yasmin Molina",
+    "bio": "Developer with an interest in creating software and firmware to provide tailored technological solutions to clients, with the ability to quickly integrate into teams"
   },
   "contactInfo": [
-    { "type":"phone"   ,  "name":"(+54) 9-11-24082020"      , "link": "(+54) 9-11-24082020"                               },
-    { "type":"mail"    ,  "name":"yasmin.pmolina@gmail.com" , "link": "yasmin.pmolina@gmail.com"                          },
-    { "type":"linkedin",  "name":"linkedin"                 , "link": "https://www.linkedin.com/in/yasmin-patricia-molina"},
-    { "type":"github"  ,  "name":"Yasmin-Pmolina"           , "link": "https://github.com/yasmin-pmolina"                 }
+    {
+      "type": "phone",
+      "name": "(+54) 9-11-24082020",
+      "link": "(+54) 9-11-24082020"
+    },
+    {
+      "type": "mail",
+      "name": "yasmin.pmolina@gmail.com",
+      "link": "yasmin.pmolina@gmail.com"
+    },
+    {
+      "type": "linkedin",
+      "name": "linkedin",
+      "link": "https://www.linkedin.com/in/yasmin-patricia-molina"
+    },
+    {
+      "type": "github",
+      "name": "Yasmin-pmolina",
+      "link": "https://github.com/yasmin-pmolina"
+    }
   ],
   "education": [
     {
@@ -18,7 +34,7 @@
   ],
   "certifications": [
     {
-      "entity":"edX",
+      "entity": "edX",
       "name": "Back-end Application Development with Node.js and Express",
       "date": "Setp 2023",
       "link": "https://courses.edx.org/certificates/6847e2b9b6654cb38cd287a5547c7d3f"
@@ -54,8 +70,9 @@
       "level": "Native"
     },
     {
-      "name": "English",
-      "level": "Intermediate"
+      "name": "Ingles Reading",
+      "level": "C1 Advanced - Reading & Listening",
+      "link": "https://cert.efset.org/mNJd2q"
     }
   ],
   "experience": [
@@ -150,29 +167,83 @@
       ]
     }
   ],
-  "hardSkills":[
-    {"name":"Git",        "level":""},
-    {"name":"JavaScript", "level":"" },
-    {"name":"HTML5",      "level":"" },
-    {"name":"SASS/SCSS",  "level":"" },
-    {"name":"React.js",   "level":"" },
-    {"name":"Bootstrap",  "level":"" },
-    {"name":"JQuery",     "level":"" },
-    {"name":"MySql",      "level":"" },
-    {"name":"PostgreSQL", "level":"" },
-    {"name":"C",          "level":"" },
-    {"name":"C++",        "level":"" },
-    {"name":"C#",         "level":"" },
-    {"name":"Node.js",    "level":"" },
-    {"name":"Qt",         "level":"" },
-    {"name":"Jira",       "level":"" }
+  "hardSkills": [
+    {
+      "name": "Git",
+      "level": ""
+    },
+    {
+      "name": "JavaScript",
+      "level": ""
+    },
+    {
+      "name": "HTML5",
+      "level": ""
+    },
+    {
+      "name": "SASS/SCSS",
+      "level": ""
+    },
+    {
+      "name": "React.js",
+      "level": ""
+    },
+    {
+      "name": "Bootstrap",
+      "level": ""
+    },
+    {
+      "name": "JQuery",
+      "level": ""
+    },
+    {
+      "name": "MySql",
+      "level": ""
+    },
+    {
+      "name": "PostgreSQL",
+      "level": ""
+    },
+    {
+      "name": "C",
+      "level": ""
+    },
+    {
+      "name": "C++",
+      "level": ""
+    },
+    {
+      "name": "C#",
+      "level": ""
+    },
+    {
+      "name": "Node.js",
+      "level": ""
+    },
+    {
+      "name": "Qt",
+      "level": ""
+    },
+    {
+      "name": "Jira",
+      "level": ""
+    }
   ],
-  
-  "softSkills":[
-    {"name":"The ability to analyze information objectively and make reasoned judgments or decisions." },
-    {"name":"The ability to collaborate effectively with others towards a common goal. It includes active listening, communication, cooperation, and the willingness to contribute to the team's success." },
-    {"name":"The capacity to quickly acquire and apply new knowledge, skills, and competencies." },
-    {"name":"The ability to identify, analyze, and develop solutions to complex problems." },
-    {"name":"Taking initiative and demonstrating a proactive mindset in anticipating and addressing issues or opportunities." }
-  ] 
+  "softSkills": [
+    {
+      "name": "The ability to analyze information objectively and make reasoned judgments or decisions."
+    },
+    {
+      "name": "The ability to collaborate effectively with others towards a common goal. It includes active listening, communication, cooperation, and the willingness to contribute to the team's success."
+    },
+    {
+      "name": "The capacity to quickly acquire and apply new knowledge, skills, and competencies."
+    },
+    {
+      "name": "The ability to identify, analyze, and develop solutions to complex problems."
+    },
+    {
+      "name": "Taking initiative and demonstrating a proactive mindset in anticipating and addressing issues or opportunities."
+    }
+  ]
 }
